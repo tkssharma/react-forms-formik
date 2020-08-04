@@ -12,8 +12,6 @@ export const useInput = initialValue => {
       }
     };
 };
-
-
 export function NameForm(props) {
   const { value, bind, reset } = useInput('');
   

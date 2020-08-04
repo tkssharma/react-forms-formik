@@ -29,15 +29,9 @@ export const ValidationSchemaExample = () => (
       {({ errors, touched }) => (
         <Form>
           <Field name="name"  />
--           {errors.name && touched.name ? (
--            <div>{errors.name}</div>
--          ) : null}
-+         <ErrorMessage name="name" />
+         <ErrorMessage name="name" />
           <Field name="email" type="email" />
--           {errors.email && touched.email ? (
--            <div>{errors.email}</div>
--          ) : null}
-+         <ErrorMessage name="email" />
+         <ErrorMessage name="email" />
           <button type="submit">Submit</button>
         </Form>
       )}

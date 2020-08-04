@@ -1,34 +1,33 @@
 .App {
-  display: flex;
-  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
 }
 
-label {
-  font-weight: bold;
-  display: flex;
-  margin-bottom: 5px;
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-input[type='text'],
-input[type='email'],
-textarea {
-  display: block;
-  width: 400px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
+.input-field {
+  margin-bottom: 16px;
+}
+
+.input-field input {
+  padding: 8px 12px;
+  border: none;
+  border: 1px solid #808e9b;
   border-radius: 4px;
-  /* margin-bottom: 20px; */
+  outline: none;
+}
+.is-invalid {
+  border-color: red !important;
 }
 
-.form-control {
-  margin-bottom: 20px;
-}
-
-.error {
-  color: red;
+button {
+  outline: none;
+  border: none;
+  background-color: #0be881;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
 }

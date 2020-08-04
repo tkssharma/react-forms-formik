@@ -2,10 +2,6 @@ import React from 'react';
 import { useFormik } from 'formik';
 
 const SignupForm = () => {
-  // Notice that we have to initialize ALL of fields with values. These
-  // could come from props, but since we don't want to prefill this form,
-  // we just use an empty string. If you don't do this, React will yell
-  // at you.
   const formik = useFormik({
     initialValues: {
       firstName: '',
