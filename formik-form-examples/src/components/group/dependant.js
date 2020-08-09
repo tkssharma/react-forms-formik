@@ -42,19 +42,6 @@ function App() {
       >
         <div className="section">
           <h1>Dependent Formik Field Example</h1>
-          <p style={{ color: '#555' }}>
-            This is an example of how to set the value of one field based on the
-            current values of other fields in Formik v2. In form below, textC's
-            value is set based on the current values of fields textA and textB.
-          </p>
-          <div>
-            <small>
-              <em>
-                Instructions: enter values for textA, and textB, and then watch
-                textC.
-              </em>
-            </small>
-          </div>
           <Form>
             <label>
               textA
@@ -72,18 +59,6 @@ function App() {
           </Form>
         </div>
       </Formik>
-      <div style={{ marginTop: 16 }}>
-        Notice the following:
-        <ul>
-          <li>
-            textC's value is set after fields textA and textB have been touched
-            and if they are not empty.
-          </li>
-          <li>
-            textC is <i>still</i> editable after being set programmatically.
-          </li>
-        </ul>
-      </div>
     </div>
   );
 }
